@@ -2,7 +2,9 @@ import React, { useState } from 'react';
 import { View, Text, Button, StyleSheet } from 'react-native';
 
 // HELLO TEACHING ASSISTANT. I NEED THIS POLYFILL FOR UUID TO WORK TY <3
-import 'react-native-get-random-values'
+// https://github.com/Minjun1Kim/ReactNativeAppDemo/issues/1#issue-2082678889
+
+import 'react-native-get-random-values';
 import { v4 as uuidv4 } from 'uuid';
 import AddTask from './AddTask';
 
